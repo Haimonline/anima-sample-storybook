@@ -1,0 +1,29 @@
+on:
+  push:
+    branches:
+      - main
+
+env:
+  STORYBOOK_ANIMA_TOKEN: ${{ secrets.STORYBOOK_ANIMA_TOKEN }}
+
+jobs:
+  build-deploy-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build storybook
+        run: yarn build-storybook
+      
+      - name: Sync to Anima
+        run: yarn sync-to-figma
+
+      - name: Deploy storybook to GitHub Pages
+        run: yarn deploy-storybook -- --ci --existing-output-dir=./storybook-static
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}

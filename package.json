@@ -27,7 +27,8 @@
     "storybook": "start-storybook -p 6006 --no-manager-cache -s public",
     "storybook:dev": "rm -rf ./node_modules/.cache && start-storybook -p 6006 --no-manager-cache -s public",
     "build-storybook": "build-storybook -s public",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "sync-to-figma": "anima-storybook sync --design-tokens ./design-tokens.json"
   },
   "eslintConfig": {
     "extends": [
@@ -70,6 +71,7 @@
     "@storybook/preset-create-react-app": "^4.0.1",
     "@storybook/react": "^6.4.19",
     "@storybook/storybook-deployer": "^2.8.10",
+    "anima-storybook-cli": "^0.4.0",
     "babel-plugin-react-docgen": "^4.2.1",
     "lodash": "^4.17.21",
     "storybook-addon-ghostwriter": "^1.0.0",
