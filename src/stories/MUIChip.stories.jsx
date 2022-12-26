@@ -21,11 +21,7 @@ export default {
     },
     disabled: { control: "boolean" },
     clickable: { control: "boolean" },
-    deletable: {
-      control: {
-        type: "boolean",
-      },
-    },
+    deletable: { control: "boolean" },
   },
 };
 
