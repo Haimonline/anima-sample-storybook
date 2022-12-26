@@ -19,10 +19,15 @@ export default {
     },
     disabled: { control: "boolean" },
     clickable: { control: "boolean" },
+    deletable: { control: "boolean" },
   },
 };
 
-const Template = (args) => <Chip {...args} />;
+const Template = ({deletable, ...args}) => 
+  <Chip 
+    onDelete={deletable ? () => {}: undefined}
+    {...args} 
+  />;
 export const MuiChip = Template.bind({});
 
 MuiChip.args = {
@@ -31,5 +36,5 @@ MuiChip.args = {
   color: "primary",
   clickable: true,
   disabled: false,
-  onDelete: false,
+  deletable: false,
 };
