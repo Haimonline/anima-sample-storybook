@@ -1,8 +1,6 @@
 import React from "react";
 import Chip from "@mui/material/Chip";
 
-const nullFunction = () => {}
-
 export default {
   title: "Material UI/Chip",
   component: Chip,
