@@ -6,7 +6,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  anima: {
-    designTokens: require("../design-tokens.json"),
-  },
 };
