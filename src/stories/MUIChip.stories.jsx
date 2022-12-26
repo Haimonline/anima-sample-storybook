@@ -42,4 +42,5 @@ MuiChip.args = {
   color: "primary",
   clickable: true,
   disabled: false,
+  deletable: false,
 };
