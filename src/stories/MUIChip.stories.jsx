@@ -1,6 +1,8 @@
 import React from "react";
 import Chip from "@mui/material/Chip";
 
+const nullFunction = () => {}
+
 export default {
   title: "Material UI/Chip",
   component: Chip,
@@ -19,10 +21,19 @@ export default {
     },
     disabled: { control: "boolean" },
     clickable: { control: "boolean" },
+    deletable: {
+      control: {
+        type: "boolean",
+      },
+    },
   },
 };
 
-const Template = (args) => <Chip {...args} />;
+const Template = ({deletable, ...args}) => 
+  <Chip 
+    onDelete={deletable ? () => {}: undefined}
+    {...args} 
+  />;
 export const MuiChip = Template.bind({});
 
 MuiChip.args = {
@@ -31,5 +42,4 @@ MuiChip.args = {
   color: "primary",
   clickable: true,
   disabled: false,
-  onDelete: false,
 };
