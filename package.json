@@ -7,6 +7,7 @@
     "@atlaskit/pagination": "^14.1.6",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.4.4",
     "@nextui-org/react": "^1.0.2-beta.4",
     "@testing-library/jest-dom": "^5.16.1",
@@ -17,7 +18,6 @@
     "react-figma-plugin-ds": "^2.3.0",
     "react-scripts": "5.0.0",
     "react-spinners": "^0.11.0",
-    "storybook-anima": "^1.43.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
