@@ -21,10 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "yarn storybook:dev",
     "storybook": "start-storybook -p 6006 --no-manager-cache -s public",
     "storybook:dev": "rm -rf ./node_modules/.cache && start-storybook -p 6006 --no-manager-cache -s public",
     "build-storybook": "build-storybook -s public",

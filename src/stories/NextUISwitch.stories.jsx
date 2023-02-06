@@ -5,9 +5,9 @@ export default {
   title: "Next UI/Switch",
   component: Switch,
   argTypes: {
-    checked: { control: "boolean" },
-    disabled: { control: "boolean" },
-    squared: { control: "boolean" },
+    checked: { type: "boolean" },
+    disabled: { type: "boolean" },
+    squared: { type: "boolean" },
     size: {
       control: {
         type: "select",
@@ -17,7 +17,7 @@ export default {
     color: {
       control: {
         type: "select",
-        options: ["primary", "secondary"],
+        options: ["primary", "secondary", "warning"],
       },
     },
   },

@@ -7,7 +7,7 @@ export default {
   component: Button,
   argTypes: {
     variant: {
-      control: { type: "select", options: ["text", "outlined", "contained"] },
+      control: { type: "select", options: ["outlined", "contained"] },
     },
     color: {
       control: {
@@ -25,7 +25,7 @@ export default {
     size: {
       control: { type: "select", options: ["small", "medium", "large"] },
     },
-    disabled: { control: "boolean" },
+    disabled: { type: "boolean" },
   },
 };
 

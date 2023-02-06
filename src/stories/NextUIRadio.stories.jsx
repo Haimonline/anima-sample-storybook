@@ -5,8 +5,8 @@ export default {
   title: "Next UI/Radio",
   component: Radio,
   argTypes: {
-    checked: { control: "boolean" },
-    disabled: { control: "boolean" },
+    checked: { type: "boolean" },
+    disabled: { type: "boolean" },
     size: {
       control: {
         type: "select",
@@ -16,7 +16,7 @@ export default {
     color: {
       control: {
         type: "select",
-        options: ["primary", "secondary"],
+        options: ["primary", "secondary", "warning"],
       },
     },
   },
