@@ -17,17 +17,15 @@ export default {
     size: {
       control: { type: "select", options: ["small", "medium"] },
     },
-    disabled: { control: "boolean" },
-    clickable: { control: "boolean" },
-    deletable: { control: "boolean" },
+    disabled: { type: "boolean" },
+    clickable: { type: "boolean" },
+    deletable: { type: "boolean" },
   },
 };
 
-const Template = ({deletable, ...args}) => 
-  <Chip 
-    onDelete={deletable ? () => {}: undefined}
-    {...args} 
-  />;
+const Template = ({ deletable, ...args }) => (
+  <Chip onDelete={deletable ? () => {} : undefined} {...args} />
+);
 export const MuiChip = Template.bind({});
 
 MuiChip.args = {

@@ -5,8 +5,8 @@ export default {
   title: "Material UI/Switch",
   component: Switch,
   argTypes: {
-    checked: { control: "boolean" },
-    disabled: { control: "boolean" },
+    checked: { type: "boolean" },
+    disabled: { type: "boolean" },
   },
 };
 

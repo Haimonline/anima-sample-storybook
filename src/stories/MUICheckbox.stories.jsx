@@ -5,8 +5,8 @@ export default {
   title: "Material UI/Checkbox",
   component: Checkbox,
   argTypes: {
-    checked: { control: "boolean" },
-    disabled: { control: "boolean" },
+    checked: { type: "boolean" },
+    disabled: { type: "boolean" },
   },
 };
 

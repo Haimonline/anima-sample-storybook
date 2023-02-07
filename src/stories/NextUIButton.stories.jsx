@@ -5,11 +5,11 @@ export default {
   title: "Next UI/Button",
   component: Button,
   argTypes: {
-    disabled: { control: "boolean" },
-    rounded: { control: "boolean" },
-    bordered: { control: "boolean" },
-    flat: { control: "boolean" },
-    auto: { control: "boolean", name: "auto width" },
+    disabled: { type: "boolean" },
+    rounded: { type: "boolean" },
+    bordered: { type: "boolean" },
+    flat: { type: "boolean" },
+    auto: { type: "boolean", name: "auto width" },
     size: {
       control: {
         type: "select",
@@ -19,7 +19,7 @@ export default {
     color: {
       control: {
         type: "select",
-        options: ["primary", "secondary"],
+        options: ["primary", "secondary", "warning"],
       },
     },
   },
