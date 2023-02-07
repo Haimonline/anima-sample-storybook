@@ -4,7 +4,7 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
-    "../src/demo-addon/preset.js",
+    // "../src/demo-addon/preset.js",
   ],
   framework: "@storybook/react",
   core: {
