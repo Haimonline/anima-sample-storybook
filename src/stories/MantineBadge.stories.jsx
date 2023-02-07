@@ -20,8 +20,12 @@ export default {
       control: { type: "select" },
       options: ["xs", "sm", "md", "lg"],
     },
-
     label: { description: "Label", type: "string" },
+    color: {
+      description: "Color",
+      control: { type: "select" },
+      options: ["gray", "red", "indigo", "blue", "green", "orange"],
+    },
   },
 };
 
@@ -33,4 +37,5 @@ MantineBadge.args = {
   variant: "light",
   size: "md",
   radius: "lg",
+  color: "blue",
 };

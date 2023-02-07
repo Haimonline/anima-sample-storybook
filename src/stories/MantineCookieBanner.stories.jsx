@@ -20,10 +20,10 @@ const CookiesBanner = () => {
 
       <Group position="right" mt="xs">
         <Button variant="default" size="xs">
-          Cookies preferences
+          Settings
         </Button>
         <Button variant="outline" size="xs">
-          Accept all
+          Accept
         </Button>
       </Group>
     </Paper>

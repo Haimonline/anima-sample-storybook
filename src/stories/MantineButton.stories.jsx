@@ -19,6 +19,11 @@ export default {
     uppercase: { description: "Uppercase", type: "boolean" },
     compact: { description: "Compact", type: "boolean" },
     disabled: { description: "Disabled", type: "boolean" },
+    color: {
+      description: "Color",
+      control: { type: "select" },
+      options: ["gray", "red", "indigo", "blue", "green", "orange"],
+    },
   },
 };
 
@@ -32,4 +37,5 @@ MantineButton.args = {
   uppercase: false,
   compact: false,
   disabled: false,
+  color: "blue",
 };
