@@ -8,17 +8,17 @@ export default {
     variant: {
       description: "Variant",
       control: { type: "select" },
-      options: ["outline", "light", "filled", "dot"],
+      options: ["outline", "light", "filled"],
     },
     size: {
       description: "Size",
       control: { type: "select" },
-      options: ["xs", "sm", "md", "lg"],
+      options: ["sm", "md", "lg"],
     },
     radius: {
       description: "Radius",
       control: { type: "select" },
-      options: ["xs", "sm", "md", "lg"],
+      options: ["md", "lg", "xl"],
     },
     label: { description: "Label", type: "string" },
     color: {
